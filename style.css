@@ -1,0 +1,37 @@
+#rForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+
+}
+
+table tr td, table tr th {
+  border: 2px solid black;
+}
+
+body {
+  background-image: url('pic.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+button{
+	background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+/*.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 500px;
+  padding: 16px;
+  background-color: white;
+}*/
+
+

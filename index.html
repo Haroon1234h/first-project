@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First Project</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>FIRST PROJECT OF WEB DEVELOPMENT</h1>
+	<h2>Including HTML,CSS,JS</h2>
+<form id="rForm" class="container">
+	<h1>Register:</h1>
+	<p>Please fill in this form to submit your data.</p>
+    <hr>
+	<div>
+		<label>First Name</label><br>
+		<input type="text" name="first_Name" id="firstName" placeholder="First Name..." >
+	</div>
+	<div>
+		<label>Last Name</label><br>
+		<input type="text" name="last_Name" id="lastName"  placeholder="Last Name...">
+	</div>
+	<div>
+		<label>Email</label><br>
+		<input type="email" name="email" id="email" >
+	</div>
+	<div>
+		<label>Password</label><br>
+		<input type="password" name="password" id="password"  required="">
+	</div>
+	<div>
+	    <label>Phone</label><br>
+        <input type="number" name="myNumber" id="phone" required="">
+    </div>
+	<div>
+		<label id="genderLabel">Gender</label><br>
+		<input type="radio" name="Gender" id="male" value="male"  >Male
+		<input type="radio" name="Gender" id="female" value="female">Female
+	</div>
+	<div>
+		<label>Date</label><br>
+		<input type="Date" name="DOB" id="date">
+	</div>
+	<div>
+	    <label>Hobbies</label><br>
+	    <input type="checkbox" name="myHobbiess"  id="travling">TRAVELING
+	    <input type="checkbox" name="myHobbiess"  id="driving"  >DRIVING
+	    <input type="checkbox" name="myHobbiess"  id="reading" >READING
+	    <input type="checkbox" name="myHobbiess"  id="other">OTHER
+    </div>
+    <div>
+	    <label>Address</label><br>
+	    <textarea rows="3" cols="15" id="address" required=""></textarea>
+    </div>
+    <div>
+    	<label id="eduLabel">Education</label><br>
+    	<select name="myEducation" id="education" required>
+    		<option value="">Please select an option </option>
+            <option value="masters" >MASTER</option>
+		    <option value="fsc">FA/FSC</option>
+		    <option value="matric">MATRIC</option>
+        </select>
+
+	    <!-- <select name="myEducation" id="myEducation" required>
+
+            <option value="masters" id="master">MASTER</option>
+		    <option value="fsc" id="fsc">FA/FSC</option>
+		    <option value="matric" id="matric">MATRIC</option>
+        </select> -->
+    </div>
+    <div>
+    	<button type="button" onclick="validateForm()">Click Me</button>
+    	<br>
+    	<button type="button" onclick="showTable()">Table</button>
+
+    </div>
+	<div >
+		
+	                <table>
+	                	  <thead>
+	                      <tr>
+	                       <th> First Name</th>
+	                        <th> Last Name</th>
+	                        <th> Email</th>
+	                        <th> Phone</th>
+	                        <th> Address</th>
+	                        <th> Date</th>
+	                        <th> Hobbies</th>
+	                        <th> Education</th>
+	                      </tr>
+				      </thead>
+
+				      	<tbody id="dynamicTable">
+				      		
+				      	</tbody>
+	                </table>
+
+	</div>
+</form>
+<script type="text/javascript" src="script1.js"></script>
+</body>
+</html>
